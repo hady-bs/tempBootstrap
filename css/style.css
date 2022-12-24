@@ -1,0 +1,214 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+  --white-color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* start navBar */
+.navbar {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.navbar .nav-item .nav-link {
+  color: var(--white-color);
+}
+.navbar .search {
+  border-left: 3px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link :focus {
+  color: var(--green-color);
+}
+.navbar .btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+.navbar .navbar-toggler {
+  color: var(--section-color);
+  border-color: var(--section-color);
+  font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: var(--white-color);
+}
+/* End NavBar */
+/* Start landing */
+.landing {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  height: calc(100vh - 70px);
+}
+.landing .btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+
+/* End landing */
+/* Start Features */
+.container-icons {
+  height: 200px;
+}
+.container-icons .num,
+.container-icons .icon {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-icons .num {
+  font-size: 12rem;
+  color: var(--section-color);
+  z-index: -1000;
+}
+.container-icons .icon {
+  font-size: 80px;
+  color: var(--green-color);
+}
+.features .row h4 {
+  color: var(--yellow-color);
+}
+
+/* End Features */
+/* start portflio */
+.portflio .container .btn-group .btn.active {
+  color: var(--yellow-color) !important;
+  background-color: var(--red-color) !important;
+}
+.portflio .box {
+  overflow: hidden;
+}
+.portflio .box::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: attr(data-type);
+  background-color: #33d1cc80;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+  top: 0;
+  left: -100%;
+  transition: 0.3s;
+}
+.portflio .box:hover::after {
+  left: 0;
+}
+.portflio .container .more {
+  color: var(--yellow-color) !important;
+  background-color: var(--red-color) !important;
+}
+/* End portflio */
+.about-us .info {
+  width: 40%;
+}
+.about-us .row img {
+  width: 100%;
+}
+.about-us .row .btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+/* Start meet */
+.meet {
+  background-color: var(--section-color);
+}
+.meet h4 {
+  color: var(--yellow-color);
+}
+.meet .card .card-header {
+  background-color: var(--green-color);
+  color: var(--white-color) !important;
+}
+.meet .card .card-footer {
+  font-size: 0.8rem;
+}
+.project {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.project .btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+.blog .card .card-header p {
+  font-size: 0.8rem;
+}
+.blog .btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+.login {
+  background-color: var(--yellow-color);
+}
+.login input {
+  border: none;
+  border-bottom: var(--white-color) solid 2px;
+  color: var(--white-color);
+  background-color: transparent;
+  height: 40px;
+}
+.login input:focus {
+  outline-color: var(--red-color);
+}
+.login .btn {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+.footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .link-created {
+  color: var(--green-color);
+}
+.footer .link-design {
+  color: var(--yellow-color);
+}
+.footer .email {
+  color: var(--red-color);
+  width: 100%;
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+  text-align: center;
+}
+.footer .btn-group .btn .rounded-circle {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .btn-group .btn .fa-facebook {
+  background-color: #117;
+}
+.footer .btn-group .btn .fa-twitter {
+  background-color: rgb(43, 164, 250);
+}
+.footer .btn-group .btn .fa-youtube {
+  background-color: rgb(209, 2, 2);
+}
